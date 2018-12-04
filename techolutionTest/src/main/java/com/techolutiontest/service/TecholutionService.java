@@ -1,15 +1,16 @@
 package com.techolutiontest.service;
 
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Service;
 
-@ComponentScan
+@Service
 public class TecholutionService {
 
-	private String uploadFile(String fileName) {
+	public String uploadFile(String fileName) {
 		return fileName;
 	}
-	private String downloadFile(String fileName) {
+
+	public String downloadFile(String fileName) {
 		return fileName;
 	}
-	
+
 }

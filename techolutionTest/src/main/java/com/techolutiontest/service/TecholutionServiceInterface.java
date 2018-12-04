@@ -2,7 +2,7 @@ package com.techolutiontest.service;
 
 public interface TecholutionServiceInterface {
 
-	public void uploadFile(String fileName);
+	public String uploadFile(String fileName);
 
-	public void downloadFile(String fileName);
+	public String downloadFile(String fileName);
 }
