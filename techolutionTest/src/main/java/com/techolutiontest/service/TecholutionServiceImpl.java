@@ -1,7 +1,10 @@
 package com.techolutiontest.service;
 
+import java.io.IOException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class TecholutionServiceImpl implements TecholutionServiceInterface {
@@ -10,14 +13,14 @@ public class TecholutionServiceImpl implements TecholutionServiceInterface {
 	TecholutionService techolutionService;
 
 	@Override
-	public String uploadFile(String fileName) {
-		return techolutionService.uploadFile(fileName);
+	public String uploadFile(MultipartFile fileName,String auth) throws IOException {
+		return techolutionService.uploadFile(fileName, auth);
 
 	}
 
 	@Override
-	public String downloadFile(String fileName) {
-		return techolutionService.downloadFile(fileName);
+	public String downloadFile(String fileName,String auth) throws Exception {
+		return techolutionService.downloadFile(fileName,auth);
 
 	}
 
