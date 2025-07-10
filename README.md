@@ -2,7 +2,7 @@
 
 This project is to download and upload file from your local directory
 
-first you need to give dir location pat in application.properties file
+first you need to give dir location path in application.properties file
 
 if you want to change auth key then you can change from application.properties file
 
